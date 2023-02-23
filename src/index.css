@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  background-color: #282C33;
+  color: white;
+}
+
+@layer base {
+  html {
+    font-family: "Fira Code";
+
+  }
+}
+
+.backdrop{
+ @apply fixed w-[100%] h-[100%]  bg-[rgba(0,0,0,0.5)]
+}
+
+.clsvg{
+  fill:"#00dada";
+}
