@@ -7,7 +7,7 @@ export const projects = [
   {
     technologies:
       "Nextjs , Tailwind css, TanstackQuery , Zustand , Rapid Api ,GraphQL",
-    name: "Hana  (花, “flower”)",
+    title: "Hana  (花, “flower”)",
     description:
       "Anime Info App that let u track upcoming anime or ongoing anime with the help of Anilist",
     live: "https://hanark.netlify.app/",
@@ -17,7 +17,7 @@ export const projects = [
   {
     technologies:
       "Nextjs , Tailwind css, TanstackQuery , Zustand , Nse Api, DaisyUi",
-    name: "Option Chain",
+    title: "Option Chain",
     description:
       "Nifty and BankNifty option chain tracker that provide u chart for the volume weighted PCR this one is made for my Brother",
     live: "https://optionchan.netlify.app/",
@@ -26,7 +26,7 @@ export const projects = [
   },
   {
     technologies: "Nodejs , Expressjs , MongoDB ",
-    name: "StockApi",
+    title: "StockApi",
     description:
       "Rest Api for Option Chain to track the Data from the option chain and Store the Data in Graph Format",
     live: "https://stockapi-production.up.railway.app/api/",
@@ -35,7 +35,7 @@ export const projects = [
   },
   {
     technologies: "Nextjs , Tailwind css, TanstackQuery , Zustand",
-    name: "MangaK",
+    title: "MangaK",
     description:
       "Comic Reading app that let u read The Anime Comic's and u can BookMark them",
     live: "https://mangak.vercel.app/",

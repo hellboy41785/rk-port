@@ -42,7 +42,7 @@ const Works = () => {
               {project.technologies}
             </h1>
             <div className="px-2">
-              <h1 className="py-2">{project.name}</h1>
+              <h1 className="py-2">{project.title}</h1>
               <p className="text-xs text-gray-400 mb-3">
                 {project.description}
               </p>
