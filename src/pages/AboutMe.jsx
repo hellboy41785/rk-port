@@ -16,12 +16,13 @@ const AboutMe = () => {
   };
 
   return (
-    <motion.div 
-    variants={about}
-    initial="hidden"
-    animate="visible"
-    exit="exit"
-    className="w-full px-4 sm:px-4 justify-center items-center max-w-6xl m-10 select-none  mb-20">
+    <motion.div
+      variants={about}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="w-full px-4 sm:px-4 justify-center items-center max-w-6xl m-10 select-none  mb-20"
+    >
       <div className=" flex flex-col-reverse md:flex-row justify-between  w-full ">
         <div className="">
           <h1 className="text-2xl">
@@ -60,12 +61,15 @@ const AboutMe = () => {
         <div className="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-center sm:justify-between items-center mt-8 ">
           <div className="w-[250px]">
             <div className="border border-gray-300">
-              <h1 className="font-bold sm:inline p-1">Languages & Frameworks</h1>
+              <h1 className="font-bold sm:inline p-1">
+                Languages & Frameworks
+              </h1>
             </div>
             <div className="border border-gray-300 ">
               <h1 className="text-gray-400 text-sm px-2">
                 javascript ,<br />
-                React.js , tailwnid css , Nextjs , Zustand , TanstackQuery <br /> HTML
+                React.js , tailwnid css , Nextjs , Zustand , TanstackQuery{" "}
+                <br /> HTML
               </h1>
             </div>
           </div>
@@ -139,12 +143,14 @@ const AboutMe = () => {
             <div className="flex flex-col sm:flex-row gap-3 mt-3">
               <div className=" border border-gray-400">
                 <p className="px-2 text-gray-300">
-                  I like to eat sweets a allot {" "}
+                  I like to eat sweets a allot{" "}
                 </p>
               </div>
               <div className=" border border-gray-400">
                 <p className="px-2 text-gray-300">
-                  Coding is good until <span className="text-red-400">error's</span> come <span className="text-purple-400">:(((</span> {" "}
+                  Coding is good until{" "}
+                  <span className="text-red-400">error's</span> come{" "}
+                  <span className="text-purple-400">:(((</span>{" "}
                 </p>
               </div>
             </div>

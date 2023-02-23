@@ -30,17 +30,35 @@ const Works = () => {
 
       <div className="grid sm:grid-cols-2 md:grid-cols-2 justify-center items-center mt-32 gap-5">
         {projects.map((project, i) => (
-          <div key={i} className="border border-gray-400 max-w-[500px] rounded-sm">
-            <img className="min-h-[200px] border-b border-gray-400" src={project.img} />
+          <div
+            key={i}
+            className="border border-gray-400 max-w-[500px] rounded-sm"
+          >
+            <img
+              className="min-h-[200px] border-b border-gray-400"
+              src={project.img}
+            />
             <h1 className="border-b border-gray-400 text-sm text-gray-400 px-2 py-1">
               {project.technologies}
             </h1>
             <div className="px-2">
               <h1 className="py-2">{project.name}</h1>
-              <p className="text-xs text-gray-400 mb-3">{project.description}</p>
+              <p className="text-xs text-gray-400 mb-3">
+                {project.description}
+              </p>
               <div className="flex sm:flex-row justify-between space-x-8 py-3">
-                <a href={project.live} className="border px-5 py-1 hover:bg-[#c778dd] hover:border-0">Live</a>
-                <a href={project.github} className="border px-5 py-1 hover:bg-[#c778dd] hover:border-0">GitHub</a>
+                <a
+                  href={project.live}
+                  className="border px-5 py-1 hover:bg-[#c778dd] hover:border-0"
+                >
+                  Live
+                </a>
+                <a
+                  href={project.github}
+                  className="border px-5 py-1 hover:bg-[#c778dd] hover:border-0"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
           </div>

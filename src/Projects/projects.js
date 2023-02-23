@@ -1,7 +1,7 @@
 import Hana from "./image/Hana.png";
 import Option from "./image/OptionChain.png";
 import StockApi from "./image/StockApi.png";
-import MangaK from "./image/mangak.png"
+import MangaK from "./image/mangak.png";
 
 export const projects = [
   {
@@ -36,9 +36,10 @@ export const projects = [
   {
     technologies: "Nextjs , Tailwind css, TanstackQuery , Zustand",
     name: "MangaK",
-    description: "Comic Reading app that let u read The Anime Comic's and u can BookMark them",
+    description:
+      "Comic Reading app that let u read The Anime Comic's and u can BookMark them",
     live: "https://mangak.vercel.app/",
     github: "https://github.com/hellboy41785/mangak",
-    img:MangaK
+    img: MangaK,
   },
 ];

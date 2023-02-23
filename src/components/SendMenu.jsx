@@ -58,7 +58,7 @@ const SendMenu = ({ send, setSend }) => {
   }, [send]);
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence>
       {send && (
         <motion.div
           variants={send}

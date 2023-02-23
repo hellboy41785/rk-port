@@ -5,14 +5,13 @@ import { GiTireIronCross } from "react-icons/gi";
 
 const backdrop = {
   visible: { opacity: 1 },
-  hidden: { opacity: 0, },
+  hidden: { opacity: 0 },
 };
 
 const Menu = {
   hidden: {
     y: "-100vh",
     opacity: 0,
-   
   },
   visible: {
     y: "0",
@@ -25,29 +24,29 @@ const Cross = {
   hover: {
     scale: 2.1,
     textShadow: "#",
-    rotate: [360,90],
-    transition:{
-     yoyo: Infinity,
-     duration:1.5,
-     ease: "easeInOut",
-    }
+    rotate: [360, 90],
+    transition: {
+      yoyo: Infinity,
+      duration: 1.5,
+      ease: "easeInOut",
+    },
   },
-  visible:{
-    rotate: [360,90],
-    transition:{
-     yoyo: Infinity,
-     duration:1.5,
-     ease: "easeInOut",
-    }
-  }
-}; 
+  visible: {
+    rotate: [360, 90],
+    transition: {
+      yoyo: Infinity,
+      duration: 1.5,
+      ease: "easeInOut",
+    },
+  },
+};
 
-const Section={
+const Section = {
   hover: {
     x: 25,
-    scale: 1.2
+    scale: 1.2,
   },
-}
+};
 
 const SideBar = ({ showSideBar, setShowSideBar }) => {
   const navigate = useNavigate();
@@ -78,7 +77,11 @@ const SideBar = ({ showSideBar, setShowSideBar }) => {
             variants={Menu}
             className=" text-3xl py-32 flex flex-col  justify-center items-center gap-8"
           >
-            <motion.div variants={Section} whileHover="hover" onClick={() => setShowSideBar((show) => !show)}>
+            <motion.div
+              variants={Section}
+              whileHover="hover"
+              onClick={() => setShowSideBar((show) => !show)}
+            >
               <p
                 onClick={() => handleHome()}
                 className=" hover:text-yellow-400 cursor-pointer"
@@ -86,7 +89,11 @@ const SideBar = ({ showSideBar, setShowSideBar }) => {
                 <span className="text-[#C778DD]">#</span>home
               </p>
             </motion.div>
-            <motion.div variants={Section} whileHover="hover" onClick={() => setShowSideBar((show) => !show)}>
+            <motion.div
+              variants={Section}
+              whileHover="hover"
+              onClick={() => setShowSideBar((show) => !show)}
+            >
               <p
                 onClick={() => handleWorks()}
                 className="hover:text-yellow-400 cursor-pointer"
@@ -94,7 +101,11 @@ const SideBar = ({ showSideBar, setShowSideBar }) => {
                 <span className="text-[#C778DD]">#</span>works
               </p>
             </motion.div>
-            <motion.div variants={Section} whileHover="hover" onClick={() => setShowSideBar((show) => !show)}>
+            <motion.div
+              variants={Section}
+              whileHover="hover"
+              onClick={() => setShowSideBar((show) => !show)}
+            >
               <p
                 onClick={() => handleAboutMe()}
                 className=" hover:text-yellow-400 cursor-pointer"
@@ -102,7 +113,11 @@ const SideBar = ({ showSideBar, setShowSideBar }) => {
                 <span className="text-[#C778DD]">#</span>about-me
               </p>
             </motion.div>
-            <motion.div variants={Section} whileHover="hover" onClick={() => setShowSideBar((show) => !show)}>
+            <motion.div
+              variants={Section}
+              whileHover="hover"
+              onClick={() => setShowSideBar((show) => !show)}
+            >
               <p
                 onClick={() => handleContacts()}
                 className=" hover:text-yellow-400 cursor-pointer"
@@ -110,7 +125,7 @@ const SideBar = ({ showSideBar, setShowSideBar }) => {
                 <span className="text-[#C778DD]">#</span>contacts
               </p>
             </motion.div>
-            <motion.div variants={Cross} whileHover="hover" animate="visible" >
+            <motion.div variants={Cross} whileHover="hover" animate="visible">
               <GiTireIronCross
                 onClick={() => setShowSideBar((show) => !show)}
                 className="text-white cursor-pointer"

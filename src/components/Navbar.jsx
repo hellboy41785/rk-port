@@ -32,19 +32,19 @@ const Navbar = ({ showSideBar, setShowSideBar, setLoading, loading }) => {
     },
   };
 
-  const path={
-    hidden:{
-      opacity:0,
-      pathLength:0
+  const path = {
+    hidden: {
+      opacity: 0,
+      pathLength: 0,
     },
-    visible:{
-      opacity:1,
-      pathLength:1,
-      transition:{
-        duration:2,
-      }
-    }
-  }
+    visible: {
+      opacity: 1,
+      pathLength: 1,
+      transition: {
+        duration: 2,
+      },
+    },
+  };
 
   return (
     <motion.div
@@ -56,7 +56,7 @@ const Navbar = ({ showSideBar, setShowSideBar, setLoading, loading }) => {
     >
       <div className="flex py-4 justify-between items-center w-full">
         <div className="flex justify-center items-center gap-1">
-           <img className="select-none w-10 h-10" src={Naruto} alt="logo" /> 
+          <img className="select-none w-10 h-10" src={Naruto} alt="logo" />
 
           <p className=" select-none text-2xl font-bold ">Rahul</p>
         </div>

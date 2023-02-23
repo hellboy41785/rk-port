@@ -1,11 +1,9 @@
-import React, { useRef,useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import Solo from "../image/Solo.png"
+import Solo from "../image/Solo.png";
 
-const Message = ({send,setSend}) => {
+const Message = ({ send, setSend }) => {
   const form = useRef();
-
-
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,9 +25,7 @@ const Message = ({send,setSend}) => {
       );
   };
 
-  const SendAnimation=()=>{
-
-  }
+  const SendAnimation = () => {};
 
   return (
     <div className="mt-32">
@@ -37,7 +33,7 @@ const Message = ({send,setSend}) => {
         <span className="text-purple-500  ">#</span>message me
       </p>
       <div className="flex flex-col items-center justify-center mt-10 ">
-        <img className="h-[250px] mb-5" src={Solo} alt="solo"/>
+        <img className="h-[250px] mb-5" src={Solo} alt="solo" />
         <form ref={form} onSubmit={sendEmail}>
           <div className="flex flex-col sm:flex-row gap-3 ">
             <div>
@@ -64,9 +60,9 @@ const Message = ({send,setSend}) => {
               name="message"
             />
           </div>
-          <div  className="flex justify-end ">
+          <div className="flex justify-end ">
             <input
-              onClick={()=>setSend(show=>!show)}
+              onClick={() => setSend((show) => !show)}
               className="border 
               p-2 px-4 hover:bg-purple-600 cursor-pointer
              hover:border-purple-600"
@@ -76,7 +72,6 @@ const Message = ({send,setSend}) => {
           </div>
         </form>
       </div>
-        
     </div>
   );
 };

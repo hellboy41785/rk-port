@@ -6,10 +6,9 @@ import Message from "../components/Message";
 import { motion } from "framer-motion";
 import SendMenu from "../components/SendMenu";
 
-
 const Mail = {
   hover: {
-    scale: 1.1
+    scale: 1.1,
   },
 };
 
@@ -26,17 +25,17 @@ const contacts = {
   },
 };
 
-const Contacts = ({setMessage}) => {
-  const [send,setSend] = useState(false)
-
+const Contacts = ({ setMessage }) => {
+  const [send, setSend] = useState(false);
 
   return (
-    <motion.div 
-    variants={contacts}
-    initial="hidden"
-    animate="visible"
-    exit="exit"
-    className="w-full px-4 sm:px-4 justify-center items-center max-w-6xl mt-10 mb-20">
+    <motion.div
+      variants={contacts}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="w-full px-4 sm:px-4 justify-center items-center max-w-6xl mt-10 mb-20"
+    >
       <div className="flex flex-col md:flex-row justify-between">
         <div className="select-none">
           <h1 className="text-2xl">
@@ -68,7 +67,7 @@ const Contacts = ({setMessage}) => {
               className="flex justify-center items-center gap-3 text-gray-400 hover:text-[#C778DD]"
             >
               <HiMailOpen className="text-red-400 " />
-              <a  href="https://mail.google.com/mail/u/0/#sent?compose=CllgCHrgDMmzMQGvMwVSNkhshCKxNRNJDDbXdwlrwjKWGJrvpdfjDtqFPqBjRvgRcnQRBpHkHzg">
+              <a href="https://mail.google.com/mail/u/0/#sent?compose=CllgCHrgDMmzMQGvMwVSNkhshCKxNRNJDDbXdwlrwjKWGJrvpdfjDtqFPqBjRvgRcnQRBpHkHzg">
                 unknown41785@gmail.com
               </a>
             </motion.div>
