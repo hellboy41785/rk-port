@@ -29,7 +29,7 @@ export const projects = [
     title: "StockApi",
     description:
       "Rest Api for Option Chain to track the Data from the option chain and Store the Data in Graph Format",
-    live: "https://stockapi-production.up.railway.app/api/",
+    live: "https://stockapi-production.up.railway.app",
     github: "https://github.com/hellboy41785/stockApi",
     img: StockApi,
   },
