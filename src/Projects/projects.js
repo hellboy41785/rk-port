@@ -2,8 +2,19 @@ import Hana from "./image/Hana.png";
 import Option from "./image/OptionChain.png";
 import StockApi from "./image/StockApi.png";
 import MangaK from "./image/mangak.png";
+import Dokusho from "./image/dokusho.png"
 
 export const projects = [
+  {
+    technologies:
+      "Nextjs , Tailwind css, TanstackQuery , Zustand , prisma,NextAuth, Nextjs Serverless Function,PostgreSQL,Cheerio ,Puppeteer",
+    title: "Dokusho  (読書, “Reading”)",
+    description:
+      "Light Novel Reading web application where u can read Novel from various sources why the help of Web scraping",
+    live: "https://dokusho-five.vercel.app",
+    github: "https://github.com/hellboy41785/Dokusho",
+    img: Dokusho,
+  },
   {
     technologies:
       "Nextjs , Tailwind css, TanstackQuery , Zustand , Rapid Api ,GraphQL",
