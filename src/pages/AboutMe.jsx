@@ -91,7 +91,7 @@ const AboutMe = () => {
             <div className="border border-gray-300 px-2">
               <h1 className="text-gray-400 text-sm px-2">
                 Vs Code , PyCharm , <br />
-                BootStrap , Git , DaisyUi
+                BootStrap , Git , DaisyUi,Github,Prisma,Cheerio ,PostgreSQL
               </h1>
             </div>
           </div>
