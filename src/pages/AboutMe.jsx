@@ -88,10 +88,10 @@ const AboutMe = () => {
             <div className="border border-gray-300">
               <h1 className="font-bold px-2">Tools</h1>
             </div>
-            <div className="border border-gray-300 px-2">
-              <h1 className="text-gray-400 text-sm px-2">
+            <div className="border border-gray-300 px-2 w-full">
+              <h1 className="text-gray-400 text-sm px-2 w-full p-2">
                 Vs Code , PyCharm , <br />
-                BootStrap , Git , DaisyUi,Github,Prisma,Cheerio ,PostgreSQL
+                BootStrap , Git , DaisyUi, Github, Prisma,<br/>Cheerio ,PostgreSQL
               </h1>
             </div>
           </div>
